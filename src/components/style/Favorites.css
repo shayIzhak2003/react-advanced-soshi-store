@@ -1,0 +1,44 @@
+.fav-container {
+  padding: 20px;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.fav-item {
+  width: 300px;
+}
+
+.fav-product {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fav-product p {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.fav-product img {
+  width: 100%;
+  height: 100px;
+}
+
+.nothingInCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #777;
+}
