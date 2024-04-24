@@ -3,6 +3,7 @@ import { useProductContext } from '../context/ProductContext';
 import { IoHeartDislikeOutline } from "react-icons/io5";
 import { Button } from 'antd'; // Import Button from antd
 import "./style/Favorites.css";
+import { Link } from 'react-router-dom';
 
 const Favorites = () => {
   const { favorites, removeFromFavorites, removeAllFromFavorites, setFavorites } = useProductContext();
@@ -32,6 +33,7 @@ const Favorites = () => {
                 <div className="fav-product">
                   <p>{product.title} SN:{product.id}</p>
                   <img src={product.image} alt={product.title} />
+                  <Link  to={`/product/${product.id}`} style={{marginRight:"100px", color:"blue"}}>View The Product</Link>
                   <Button className="favButton" onClick={() => removeFromFavorites(product.id)} danger><IoHeartDislikeOutline /></Button>
                 </div>
               </div>
